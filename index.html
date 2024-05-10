@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="usuario">
+            <img id="preview" src="abstract-user-flat-4.webp" alt="Imagem de Perfil do Usuário">
+            <div class="infos">
+                <h2>Nome </h2>
+                <p>Idade </p>
+                <p>Rua </p>
+                <p>Bairro</p>
+                <p>Cidade</p>
+                <p>Estado</p>
+                <p>Biografia </p>
+            </div>
+        </div>
+        <div class="formulario-atualizacao">
+            <h2 class="atualizar">Atualizar Informações</h2>
+            <form id="formulario-atualizacao">
+                <input type="file" id="imagem-perfil" accept="image/*" onchange="previewImage(event)">
+                <input type="text" maxlength="45" id="nome" placeholder="Nome">
+                <input type="number" id="idade" placeholder="Idade">
+                <input type="text" id="rua" placeholder="Rua">
+                <input type="text" id="bairro" placeholder="Bairro">
+                <input type="text" id="cidade" placeholder="Cidade">
+                <input type="text" id="estado" placeholder="Estado">
+                <textarea maxlength="500" id="biografia" placeholder="Biografia"></textarea>
+                <button type="submit">Atualizar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
